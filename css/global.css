@@ -7,6 +7,7 @@
 		border:1px solid #ededed;
 		border-top: 0;
 		background-color: #ededed;
+		box-sizing: border-box;
 	}
 /*header 영역*/
 	header{
@@ -161,11 +162,11 @@
 		color:#fff;
 		font-weight: bold;
 		background:url(../images/tel.png) no-repeat center left;
-		background-size: 20%;
+		background-size: 17%;
 		padding-left: 4%;
 		padding-top:3%;
-		padding-bottom:3%;
-		width:20%;
+		padding-bottom:3.5%;
+		width:30%;
 		margin:0 auto;
 		text-align:center;
 	}

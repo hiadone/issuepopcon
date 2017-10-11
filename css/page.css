@@ -1,11 +1,9 @@
+@@ -0,0 1,501 @@
 @charset "utf-8";
 /* page */
 
 /*실시간 정보 영역*/
-	.hot_deal ul li{
-		width: 49%;
-		float: left;
-	}
+	
 
 	.hot_deal ul li:nth-child(1),
 	.hot_deal ul li:nth-child(3){
@@ -32,6 +30,12 @@
 		padding:0 2% 2px;
 		text-align:center;
 		line-height: 16px;
+	}
+
+
+	.hot_deal > ul > li{
+		width: 49%;
+		float: left;
 	}
 
 /*관심기사 베스트 7 영역*/
@@ -264,6 +268,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		line-height: 14px;
+		text-align:center;
 	}
 
 /*line3_2 영역*/
@@ -496,6 +501,5 @@
 		}
 
 }
-
 
 

@@ -10,7 +10,7 @@ $post_id="";
 $referer = empty($_SERVER['HTTP_REFERER']) ? '' : trim($_SERVER['HTTP_REFERER']);
 
 
-include_once "common/type_issue_1.php";
+include_once "common/type_issue_2.php";
 
 
 
