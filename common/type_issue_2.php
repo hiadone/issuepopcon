@@ -2,7 +2,7 @@
 if($MD=='moreadd'){
 $sCode = "07VI"; //pv 체크
 $pageid1 = "07TH" ; // 이슈포토
-$pageid2 = "07Si" ; // 베스트신문보기
+$pageid2 = "07Vy" ; // 베스트신문보기
 $pageid3 = "07TA" ; // 정주행추천작
 $pageid4 = "07Sw" ; // 실시간핫뉴스
 $pageid5 = "07TO" ; // 주간베스트
@@ -17,7 +17,7 @@ $view_type='random';
 if($MD=='kpinews'){
 $sCode = "07VC"; //pv 체크
 $pageid1 = "07UV" ; // 이슈포토
-$pageid2 = "07UM" ; // 베스트신문보기
+$pageid2 = "07W4" ; // 베스트신문보기
 $pageid3 = "07UU" ; // 정주행추천작
 $pageid4 = "07UQ" ; // 실시간핫뉴스
 $pageid5 = "07VA" ; // 주간베스트
@@ -32,7 +32,7 @@ $view_type='random';
 if($MD=='energy'){
 $sCode = "07PX"; //pv 체크
 $pageid1 = "07UW" ; // 이슈포토
-$pageid2 = "07UL" ; // 베스트신문보기
+$pageid2 = "07W0" ; // 베스트신문보기
 $pageid3 = "07UT" ; // 정주행추천작
 $pageid4 = "07UP" ; // 실시간핫뉴스
 $pageid5 = "07V9" ; // 주간베스트
@@ -47,7 +47,7 @@ $view_type='';
 if($MD=='topstarnews'){
 $sCode = "071p"; //pv 체크
 $pageid1 = "07TL" ; // 이슈포토
-$pageid2 = "07Sm" ; // 베스트신문보기
+$pageid2 = "07W3" ; // 베스트신문보기
 $pageid3 = "07TE" ; // 정주행추천작
 $pageid4 = "07T0" ; // 실시간핫뉴스
 $pageid5 = "07TS" ; // 주간베스트
@@ -62,7 +62,7 @@ $view_type='';
 if($MD=='fnews'){
 $sCode = "071m"; //pv 체크
 $pageid1 = "07TK" ; // 이슈포토
-$pageid2 = "07Sl" ; // 베스트신문보기
+$pageid2 = "07W2" ; // 베스트신문보기
 $pageid3 = "07TD" ; // 정주행추천작
 $pageid4 = "07Sz" ; // 실시간핫뉴스
 $pageid5 = "07TR" ; // 주간베스트
@@ -77,7 +77,7 @@ $view_type='';
 if($MD=='heraldpop'){
 $sCode = "071q"; //pv 체크
 $pageid1 = "07TM" ; // 이슈포토
-$pageid2 = "07Sn" ; // 베스트신문보기
+$pageid2 = "07W5" ; // 베스트신문보기
 $pageid3 = "07TF" ; // 정주행추천작
 $pageid4 = "07T1" ; // 실시간핫뉴스
 $pageid5 = "07TT" ; // 주간베스트
@@ -92,7 +92,7 @@ $view_type='';
 if($MD=='jemin'){
 $sCode = "071o"; //pv 체크
 $pageid1 = "07TJ" ; // 이슈포토
-$pageid2 = "07Sk" ; // 베스트신문보기
+$pageid2 = "07W1" ; // 베스트신문보기
 $pageid3 = "07TC" ; // 정주행추천작
 $pageid4 = "07Sy" ; // 실시간핫뉴스
 $pageid5 = "07TQ" ; // 주간베스트
@@ -107,7 +107,7 @@ $view_type='';
 if($MD=='newstown'){
 $sCode = "071j"; //pv 체크
 $pageid1 = "07TG" ; // 이슈포토
-$pageid2 = "07Sh" ; // 베스트신문보기
+$pageid2 = "07Vx" ; // 베스트신문보기
 $pageid3 = "07T9" ; // 정주행추천작
 $pageid4 = "07Sv" ; // 실시간핫뉴스
 $pageid5 = "07TN" ; // 주간베스트
@@ -122,7 +122,7 @@ $view_type='';
 if($MD=='moodeung'){
 $sCode = "071k"; //pv 체크
 $pageid1 = "07TI" ; // 이슈포토
-$pageid2 = "07Sj" ; // 베스트신문보기
+$pageid2 = "07Vz" ; // 베스트신문보기
 $pageid3 = "07TB" ; // 정주행추천작
 $pageid4 = "07Sx" ; // 실시간핫뉴스
 $pageid5 = "07TP" ; // 주간베스트

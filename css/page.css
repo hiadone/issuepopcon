@@ -1,185 +1,127 @@
-@@ -0,0 1,501 @@
 @charset "utf-8";
 /* page */
 
-/*실시간 정보 영역*/
-	
+img{
+	border:1px solid #ededed;
+	box-sizing: border-box;
+}
 
-	.hot_deal ul li:nth-child(1),
-	.hot_deal ul li:nth-child(3){
-		margin-right: 2%;
+/*======== 메인 페이지 ========*/	
+/*line3_2 영역*/
+	.line3_2 li{
+		width: 32%;
+		margin:0 2% 0 0;
+		float: left;
+	}
+	.line3_2 li:nth-child(3n){
+		margin-right: 0;
 	}
 
-	.hot_deal ul li:nth-child(1),
-	.hot_deal ul li:nth-child(2){
+	.line3_2 li:nth-child(1),.line3_2 li:nth-child(2),.line3_2 li:nth-child(3){
 		margin-bottom:2%;
 	}
 
 
 
-	.hot_deal ul li figure img{
+	.line3_2 li img{
 		margin-bottom:2%;
 		border:1px solid #ededed;
 		box-sizing: border-box;
 	}
 
-	.hot_deal ul li figcaption p{
+	/*.line3_3 li figcaption{
+		text-align: center;
+	}*/
+
+	.line3_2 li b{
+		font-weight: bold;
+		display: block;
+		margin-bottom:2%;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.line3_2 li p{
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
-		padding:0 2% 2px;
+		line-height: 15px;
 		text-align:center;
-		line-height: 16px;
 	}
 
-
-	.hot_deal > ul > li{
-		width: 49%;
-		float: left;
+/*best 영역*/
+	.best{
+		padding:0;
 	}
 
-/*관심기사 베스트 7 영역*/
-	.test_7{
-		padding:2% 0 2%;
-	}
-	.test_7 > h2{
-		padding:0 2%;
-	}
-	.test_7 li{
-		background:url(../images/dot.png) no-repeat 3% center;
-		background-size: 1.5%;
-		margin-bottom:3%;
-		padding:3px 0 3px 6%;
-		border-bottom:1px solid #ededed;
-	}
-
-	.test_7 li a{
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-		height: 18px;
-		line-height: 18px;
-	}
-
-	.test_7 li:last-child{
+	.best h2{
+		padding:2%;
+		box-sizing: border-box;
 		margin-bottom:0;
 	}
 
-
-/*이미지 슬라이드*/
-	.bx-wrapper {position: relative;margin: 0 auto;padding: 0;	*zoom: 1;}
-	.bx-wrapper img {max-width: 100%;display: block;}
-
-	/** THEME
-	===================================*/
-
-	.bx-wrapper .bx-viewport {	/*fix other elements on the page moving (on Chrome)*/-webkit-transform: translatez(0);-moz-transform: translatez(0);-ms-transform: translatez(0);-o-transform:translatez(0);transform: translatez(0);}
-	.bx-wrapper .bx-viewport ul {margin:0px; padding:0px;}
-
-	.bx-wrapper .bx-pager,
-	.bx-wrapper .bx-controls-auto {position: absolute;	bottom: 0px;width: 100%;}
-
-	/* LOADER */
-
-	.bx-wrapper .bx-loading {min-height: 50px;background: url(../images/bx_loader.gif) center center no-repeat #fff;height: 100%;	width: 100%;position: absolute;	top: 0;left: 0;	z-index: 2000;}
-
-	/* PAGER */
-
-	.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-family: Arial;font-weight: bold;color: #ccc;}
-
-	.bx-wrapper .bx-pager .bx-pager-item,
-	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
-
-	.bx-wrapper .bx-pager.bx-default-pager a {background: #ccc;text-indent: -9999px;display: block;	width: 5px;height: 5px;margin: 0 5px;	outline: 0;	-moz-border-radius: 5px;-webkit-border-radius: 5px;	border-radius: 5px;}
-
-	.bx-wrapper .bx-pager.bx-default-pager a:hover,
-	.bx-wrapper .bx-pager.bx-default-pager a.active {background: #000;}
-
-	/* DIRECTION CONTROLS (NEXT / PREV) */
-
-	.bx-wrapper .bx-prev {left: 10px;	background: url(../images/controls.png) no-repeat 0 -32px;}
-	.bx-wrapper .bx-next {right: 10px;	background: url(../images/controls.png) no-repeat -43px -32px;}
-	.bx-wrapper .bx-prev:hover {background-position: 0 0;}
-	.bx-wrapper .bx-next:hover {background-position: -43p 0;}
-	.bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;	margin-top: -16px;outline: 0;width: 32px;height: 32px;text-indent: -9999px;z-index: 9999;}
-	.bx-wrapper .bx-controls-direction a.disabled {	display: none;}
-
-	/* AUTO CONTROLS (START / STOP) */
-
-	.bx-wrapper .bx-controls-auto {text-align: center;}
-	.bx-wrapper .bx-controls-auto .bx-start {display: block;text-indent: -9999px;width: 10px;height: 11px;outline: 0;background: url(../images/controls.png) -86px -11px no-repeat;margin: 0 3px;}
-	.bx-wrapper .bx-controls-auto .bx-start:hover,
-	.bx-wrapper .bx-controls-auto .bx-start.active {background-position: -86px 0;}
-	.bx-wrapper .bx-controls-auto .bx-stop {display: block;	text-indent: -9999px;width: 9px;height: 11px;outline: 0;background: url(../images/controls.png) -86px -44px no-repeat;	margin: 0 3px;}
-	.bx-wrapper .bx-controls-auto .bx-stop:hover,
-	.bx-wrapper .bx-controls-auto .bx-stop.active {background-position: -86px -33px;}
-
-	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-
-	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {text-align: left;width: 80%;}
-	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {right: 0;width: 35px;}
-
-	/* IMAGE CAPTIONS */
-
-	.bx-wrapper .bx-caption {position: absolute;bottom: 0;	left: 0;background: #666\9;	background: rgba(80, 80, 80, 0.75);width: 100%;}
-	.bx-wrapper .bx-caption span {color: #fff;font-family: Arial;display: block;font-size: .85em;	padding: 10px;
+	.best ul{
+		padding-bottom:2%;
 	}
 
-/* 배너영역 / padding_0 */
-	.padding_0{
-		padding:0;
-		background-color: #ededed;
+	.best ul li{
+		border-bottom:1px solid #ededed;
 	}
 
-/*대박 딜 영역*/
-	.daebak_deal ul li{
-		width: 49%;
+	.best ul li a {
+		font-size: 15px;
+		padding: 8px 8px 7px 8%;
+		box-sizing: border-box;
+		text-overflow: ellipsis;
+		overflow-x: hidden;
+		white-space: nowrap;
+		background:url(../images/dot.png) no-repeat 5% center;
+		background-size: 1.1%;
+	}
+
+/*line3_3 영역*/
+	.line3_3 li{
+		width: 32%;
 		margin:0 2% 2% 0;
 		float: left;
 	}
-
-	.daebak_deal ul li:nth-child(2n){
-		margin-right:0;
+	.line3_3 li:nth-child(3n){
+		margin-right: 0;
 	}
 
-	.daebak_deal ul li:nth-child(5),.daebak_deal ul li:nth-child(6){
-		margin-bottom: 0;
+	.line3_3 li:nth-child(7),
+	.line3_3 li:nth-child(8),
+	.line3_3 li:nth-child(9){
+		margin-bottom:0;
 	}
 
-	.daebak_deal ul li img{
+	.line3_3 li img{
 		margin-bottom:2%;
 	}
 
-	.daebak_deal ul li figcaption{
-		text-align:center;
+	/*.line3_3 li figcaption{
+		text-align: center;
+	}*/
+
+	.line3_3 li b{
+		font-weight: bold;
+		display: block;
+		margin-bottom:2%;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
-	.daebak_deal ul li figcaption p{
+	.line3_3 li p{
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
-		padding:0 2% 2px;
+		line-height: 14px;
+		text-align:center;
 	}
 
-	.daebak_deal ul li figcaption span{
-		color:red;
-		font-weight: bold;
-	}
-
-	.daebak_deal ul li figcaption span,
-	.daebak_deal ul li figcaption del{
-		margin: 2% 0;
-		display: inline-block;
-	}
-
-
-	.daebak_deal ul li figcaption b{
-		display: block;
-		font-weight: bold;
-
-	}
-
-/*인기기획전 TOP06 영역 , PD 강력추천작 영역*/
+/*exhibition 영역*/
 	.exhibition li{
 		margin-bottom: 1%;
 	}
@@ -229,91 +171,60 @@
 		height: 32px;
 		padding-top:1px;
 	}
-	
-/*line3_3 영역*/
-	.line3_3 li{
-		width: 32%;
-		margin:0 2% 2% 0;
-		float: left;
-	}
-	.line3_3 li:nth-child(3n){
-		margin-right: 0;
+
+/*hot_deal 영역*/
+	.hot_deal ul li:nth-child(1),
+	.hot_deal ul li:nth-child(3){
+		margin-right: 2%;
 	}
 
-	.line3_3 li:nth-child(7),
-	.line3_3 li:nth-child(8),
-	.line3_3 li:nth-child(9){
-		margin-bottom:0;
-	}
-
-	.line3_3 li img{
+	.hot_deal ul li:nth-child(1),
+	.hot_deal ul li:nth-child(2){
 		margin-bottom:2%;
 	}
 
-	/*.line3_3 li figcaption{
-		text-align: center;
-	}*/
 
-	.line3_3 li b{
-		font-weight: bold;
-		display: block;
-		margin-bottom:2%;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-	}
 
-	.line3_3 li p{
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-		line-height: 14px;
-		text-align:center;
-	}
-
-/*line3_2 영역*/
-	.line3_2 li{
-		width: 32%;
-		margin:0 2% 2% 0;
-		float: left;
-	}
-	.line3_2 li:nth-child(3n){
-		margin-right: 0;
-	}
-
-	.line3_2 li:nth-child(4),
-	.line3_2 li:nth-child(5),
-	.line3_2 li:nth-child(6){
-		margin-bottom:0;
-	}
-
-	.line3_2 li img{
+	.hot_deal ul li figure img{
 		margin-bottom:2%;
 		border:1px solid #ededed;
 		box-sizing: border-box;
 	}
 
-	/*.line3_3 li figcaption{
-		text-align: center;
-	}*/
-
-	.line3_2 li b{
-		font-weight: bold;
-		display: block;
-		margin-bottom:2%;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		overflow: hidden;
-	}
-
-	.line3_2 li p{
+	.hot_deal ul li figcaption p{
 		text-overflow: ellipsis;
 		overflow: hidden;
 		white-space: nowrap;
-		line-height: 15px;
+		padding:0 2% 2px;
 		text-align:center;
+		line-height: 16px;
 	}
 
+
+	.hot_deal > ul > li{
+		width: 49%;
+		float: left;
+	}
+
+/* 배너영역 / padding_0 */
+	.padding_0{
+		padding:0;
+		background-color: #ededed;
+	}
+
+/*click 영역*/
+	.click img{
+		border:0;
+	}
+
+	.click ul li:first-child{
+		margin-bottom:2%;
+	}
+/*=========================*/
+
+
+
+/*=========================*/
 /*투믹스 독점작  영역*/
 	.tomix ul li{
 		width: 49%;
@@ -479,6 +390,148 @@
 		right: 0;
 	}
 
+/*관심기사 베스트 7 영역*/
+	.test_7{
+		padding:2% 0 2%;
+	}
+	.test_7 > h2{
+		padding:0 2%;
+	}
+	.test_7 li{
+		background:url(../images/dot.png) no-repeat 3% center;
+		background-size: 1.5%;
+		margin-bottom:3%;
+		padding:3px 0 3px 6%;
+		border-bottom:1px solid #ededed;
+	}
+
+	.test_7 li a{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		height: 18px;
+		line-height: 18px;
+	}
+
+	.test_7 li:last-child{
+		margin-bottom:0;
+	}
+
+/*이미지 슬라이드*/
+	.bx-wrapper {position: relative;margin: 0 auto;padding: 0;	*zoom: 1;}
+	.bx-wrapper img {max-width: 100%;display: block;}
+
+	/** THEME
+	===================================*/
+
+	.bx-wrapper .bx-viewport {	/*fix other elements on the page moving (on Chrome)*/-webkit-transform: translatez(0);-moz-transform: translatez(0);-ms-transform: translatez(0);-o-transform:translatez(0);transform: translatez(0);}
+	.bx-wrapper .bx-viewport ul {margin:0px; padding:0px;}
+
+	.bx-wrapper .bx-pager,
+	.bx-wrapper .bx-controls-auto {position: absolute;	bottom: 0px;width: 100%;}
+
+	/* LOADER */
+
+	.bx-wrapper .bx-loading {min-height: 50px;background: url(../images/bx_loader.gif) center center no-repeat #fff;height: 100%;	width: 100%;position: absolute;	top: 0;left: 0;	z-index: 2000;}
+
+	/* PAGER */
+
+	.bx-wrapper .bx-pager {text-align: center;font-size: .85em;font-family: Arial;font-weight: bold;color: #ccc;}
+
+	.bx-wrapper .bx-pager .bx-pager-item,
+	.bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+
+	.bx-wrapper .bx-pager.bx-default-pager a {background: #ccc;text-indent: -9999px;display: block;	width: 5px;height: 5px;margin: 0 5px;	outline: 0;	-moz-border-radius: 5px;-webkit-border-radius: 5px;	border-radius: 5px;}
+
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {background: #000;}
+
+	/* DIRECTION CONTROLS (NEXT / PREV) */
+
+	.bx-wrapper .bx-prev {left: 10px;	background: url(../images/controls.png) no-repeat 0 -32px;}
+	.bx-wrapper .bx-next {right: 10px;	background: url(../images/controls.png) no-repeat -43px -32px;}
+	.bx-wrapper .bx-prev:hover {background-position: 0 0;}
+	.bx-wrapper .bx-next:hover {background-position: -43p 0;}
+	.bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;	margin-top: -16px;outline: 0;width: 32px;height: 32px;text-indent: -9999px;z-index: 9999;}
+	.bx-wrapper .bx-controls-direction a.disabled {	display: none;}
+
+	/* AUTO CONTROLS (START / STOP) */
+
+	.bx-wrapper .bx-controls-auto {text-align: center;}
+	.bx-wrapper .bx-controls-auto .bx-start {display: block;text-indent: -9999px;width: 10px;height: 11px;outline: 0;background: url(../images/controls.png) -86px -11px no-repeat;margin: 0 3px;}
+	.bx-wrapper .bx-controls-auto .bx-start:hover,
+	.bx-wrapper .bx-controls-auto .bx-start.active {background-position: -86px 0;}
+	.bx-wrapper .bx-controls-auto .bx-stop {display: block;	text-indent: -9999px;width: 9px;height: 11px;outline: 0;background: url(../images/controls.png) -86px -44px no-repeat;	margin: 0 3px;}
+	.bx-wrapper .bx-controls-auto .bx-stop:hover,
+	.bx-wrapper .bx-controls-auto .bx-stop.active {background-position: -86px -33px;}
+
+	/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {text-align: left;width: 80%;}
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {right: 0;width: 35px;}
+
+	/* IMAGE CAPTIONS */
+
+	.bx-wrapper .bx-caption {position: absolute;bottom: 0;	left: 0;background: #666\9;	background: rgba(80, 80, 80, 0.75);width: 100%;}
+	.bx-wrapper .bx-caption span {color: #fff;font-family: Arial;display: block;font-size: .85em;	padding: 10px;
+	}
+
+/*대박 딜 영역*/
+	.daebak_deal ul li{
+		width: 49%;
+		margin:0 2% 2% 0;
+		float: left;
+	}
+
+	.daebak_deal ul li:nth-child(2n){
+		margin-right:0;
+	}
+
+	.daebak_deal ul li:nth-child(5),.daebak_deal ul li:nth-child(6){
+		margin-bottom: 0;
+	}
+
+	.daebak_deal ul li img{
+		margin-bottom:2%;
+	}
+
+	.daebak_deal ul li figcaption{
+		text-align:center;
+	}
+
+	.daebak_deal ul li figcaption p{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		padding:0 2% 2px;
+	}
+
+	.daebak_deal ul li figcaption span{
+		color:red;
+		font-weight: bold;
+	}
+
+	.daebak_deal ul li figcaption span,
+	.daebak_deal ul li figcaption del{
+		margin: 2% 0;
+		display: inline-block;
+	}
+
+
+	.daebak_deal ul li figcaption b{
+		display: block;
+		font-weight: bold;
+
+	}
+/*=========================*/
+
+
+
+
+
+
+
+
 @media screen and (max-width:320px){
 		.topic figure img{
 			margin-right: 2%;
@@ -499,7 +552,6 @@
 		.topic figure figcaption p{
 			font-size: 11px;
 		}
-
 }
 
 
