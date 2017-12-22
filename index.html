@@ -95,15 +95,14 @@ include "lib/media_code.php";
 </script>
 <?php if ( $popstate === 'enable' && empty($ad)) { ?>
 <script language = "javascript"> 
-
+ var stateObj = { forward: "forward" };
     $(document).ready(function() {
 
 
 
     if (window.history && window.history.pushState) {
-
-        window.history.pushState('forward', null, document.location.href);
-      console.log(window.history.length);  
+    	if('state' in window.history && window.history.state !== null) window.history.replaceState(stateObj, null, document.location.href);
+		else window.history.pushState(stateObj, null, document.location.href);
         var popped = ('state' in window.history && window.history.state !== null), initialURL = location.href;
 
         $(window).bind('popstate', function (event) {
@@ -199,7 +198,7 @@ include "lib/media_code.php";
 		</section>
 
 	<!-- 많이 본 뉴스 -->
-		<section class="best">
+		<section class="click">
 			<h2>많이 본 뉴스 </h2>
 				<script src="http://ad.ad4989.co.kr/cgi-bin/PelicanC.dll?impr?pageid=<?=$pageid2?>&lang=utf-8&out=script"></script>
 		</section>
